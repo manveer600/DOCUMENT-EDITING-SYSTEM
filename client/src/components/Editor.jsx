@@ -39,7 +39,7 @@ function Editor() {
 
   async function handleLogout() {
     try {
-      const response = await dispatch(logout());
+      await dispatch(logout());
     } catch (e) {
       toast.error(e?.response?.data?.message);
     }
