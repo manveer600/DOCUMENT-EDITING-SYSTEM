@@ -9,12 +9,13 @@ connection();
 
 const io = new Server(process.env.SOCKET_PORT, {
   cors: {
-    origin:'https://client-manveer-singhs-projects.vercel.app/docs/login',
+    origin:'*',
     methods: ["GET", "POST"],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
-    optionsSuccessStatus: 204
+    optionsSuccessStatus: 204,
+    allowEIO3: true // Enable CORS for Socket.IO
   },
 });
 
