@@ -9,7 +9,7 @@ connection();
 
 const io = new Server(process.env.SOCKET_PORT, {
   cors: {
-    origin: process.env.FRONTEND_URL,
+    origin:'https://client-n8wzrsa6w-manveer-singhs-projects.vercel.app',
     methods: ["GET", "POST"],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],

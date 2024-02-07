@@ -6,7 +6,7 @@ dotenv.config();
 const app = express();
 app.use(
     cors({
-        origin: process.env.FRONTEND_URL,
+        origin: 'https://client-n8wzrsa6w-manveer-singhs-projects.vercel.app',
         credentials: true,
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         allowedHeaders: ['Content-Type', 'Authorization'],
